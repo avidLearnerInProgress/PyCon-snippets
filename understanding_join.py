@@ -25,4 +25,4 @@ t.start()
 
 d.join(1)
 print('d.isAlive()', d.isAlive())
-t.join()
+t.join()	

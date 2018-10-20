@@ -1,21 +1,6 @@
 import threading, random
 import multiprocessing
 
-'''def print_s(s):
-	print(s)
-
-t = threading.Thread(target = print_s, args = ("hello_world",))
-t.start()
-print("Started")
-t.join()
-
-
-u = threading.Thread(target = print_s, args = ("hello_world",))
-u.daemon = True
-u.start()
-print("Started")
-u.join()
-'''
 
 results = []
 

@@ -1,14 +1,11 @@
 import socket, threading
-
-log = []
+log, threads = [], []
 
 def _connect():
 	s = socket.socket()
 	log.append('connecting..')
-	s.connect('python.org', 80)
+	s.connect(('python.org', 80)) #drop the GIL
 	log.append('connected..')
-
-threads = []
 
 for i in range(2):
 	t = threading.Thread(target = _connect)
